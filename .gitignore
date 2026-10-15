@@ -1,21 +1,41 @@
+# Secrets and local environment
 .env
 .env.*
 !.env.example
 
+# Python virtual environments and cache
 .venv/
+venv/
+env/
 __pycache__/
 *.py[cod]
+.ipynb_checkpoints/
+
+# IDE/editor files
 .vscode/
 .idea/
 
+# Model weights and checkpoints (keep large files out of Git)
 *.safetensors
 *.bin
 *.pt
 *.pth
 *.ckpt
 *.gguf
-
-.cache/
-outputs/
-checkpoints/
 models/
+checkpoints/
+outputs/
+
+# Hugging Face and other local caches
+.cache/
+huggingface_cache/
+
+# Local vector stores / generated data
+vector_store/
+chroma_db/
+
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
