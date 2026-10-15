@@ -1,19 +1,13 @@
-# Secrets
 .env
 .env.*
 !.env.example
 
-# Python
+.venv/
 __pycache__/
 *.py[cod]
-.venv/
-venv/
-
-# IDE
 .vscode/
 .idea/
 
-# Model weights
 *.safetensors
 *.bin
 *.pt
@@ -21,21 +15,7 @@ venv/
 *.ckpt
 *.gguf
 
-# Model checkpoints and outputs
+.cache/
+outputs/
 checkpoints/
 models/
-outputs/
-
-# Cache and logs
-.cache/
-*.log
-.ipynb_checkpoints/
-
-# Local data and vector stores
-data/
-vector_store/
-chroma_db/
-
-# OS files
-.DS_Store
-Thumbs.db
